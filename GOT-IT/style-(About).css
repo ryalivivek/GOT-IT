@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #1c1c1c;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00d4ff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ff007a;
+}
+
+
+#main{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #00d4ff #1c1c1c;
+}
+#header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+#title{
+    position: relative;
+    top: -20px;
+    font-size: 90px;
+    background-color: #1a1a1a; 
+    background-image: linear-gradient(45deg, #ff007a, #00d4ff);
+    background-clip: text;
+    /* -webkit-background-clip: text; */
+    color: transparent;
+    user-select: none;
+}
+#subtitle{
+    position: relative;
+    left: 20%;
+    top: -20px;
+    background-color: #1a1a1a; 
+    background-image: linear-gradient(45deg,  #00d4ff,#ff007a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    user-select: none;
+}
+#amain{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 10px;
+}
+.side-heading{
+    color: #00d4ff;
+    font-weight: bold;
+    border-left: 3px solid #ff007a;
+    padding-left: 10px;
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+.side-paragraph{
+    color: #d3d3d3;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    text-align: justify;
+}
+.features {
+    margin: 20px 0;
+}
+
+.features-heading {
+    color: #00d4ff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-left: 3px solid #ff007a;
+    padding-left: 10px;
+}
+
+.features-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #d3d3d3;
+    font-size: 1rem; 
+    line-height: 1.6;
+}
+
+.features-list li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.for-students,.for-admins {
+    margin-bottom: 20px;
+    position: relative;
+    left: 20px;
+}
+
+.side-heading {
+    color: #00d4ff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-left: 3px solid #ff007a;
+    padding-left: 10px;
+}
+
+.ordered-list {
+    margin-left: 20px;
+    color: #d3d3d3;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.clientele {
+    margin: 20px 0;
+}
+
+.future-plans {
+    margin: 20px 0;
+}
+
+.technology-stack {
+    margin: 20px 0;
+}
+
+.tech-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #d3d3d3;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.developer-info {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.developer-grid {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.developer {
+    text-align: center;
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 20px #ff007a;
+}
+
+.linkedin-icon {
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+}
+
+.developer p {
+    color: #d3d3d3;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+.fa-brands , .fa-linkedin{
+    color: white;
+    color: #00d4ff;
+    background-color: black;
+    font-size: 30px;
+}
+.contact-info {
+    margin: 20px 0;
+    text-align:left;
+}
+
+.contact-info p {
+    color: #d3d3d3;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+#contactid{
+    position: relative;
+    left: 20px;
+    margin-left: 10px;
+}

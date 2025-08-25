@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main{
+    height: 600px;
+    width: 700px;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%,0);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#sbox{
+    height: 500px;
+    background-color: yellow;
+    width: 400px;
+    box-shadow: 0 0 10px #292830;
+    border-radius: 30px;
+}
+#top{
+    height: 50px;
+    width: 100%;
+    color: white;
+    background-color: #292830;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+}
+#bot{
+    height: 450px;
+    width: 100%;
+    background-color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+#username{
+    height: 50px;
+    width: 300px;
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    top: 4%;
+}
+#us{
+    opacity: 0.5;
+    position: relative;
+    top: -48px;
+    left: -80px;
+    background-color: white;
+    pointer-events: none;
+    user-select: none;
+    transition: all 0.2s linear 0ms;
+}
+#password{
+    position: relative;
+    top: -7%;
+    height: 50px;
+    width: 300px;
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    padding: 20px;
+    border-radius: 10px;
+}
+#password:focus ~#ps{
+    opacity: 1;
+    padding-left: 10px;
+}
+#ps{
+    opacity: 0.5;
+    position: relative;
+    top: -96px;
+    left: -80px;
+    background-color: white;
+    pointer-events: none;
+    user-select: none;
+    transition: all 0.2s linear 0ms;
+}
+#tog{
+    position: relative;
+    top: -145px;
+    left: 115px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+#username:focus ~#us{
+    opacity: 1;
+    padding-left: 10px;
+}
+#username:focus{
+    border-color: rgba(0,0,0,1);
+}
+#password:focus{
+    border-color: rgba(0,0,0,1);
+}
+#password:focus~#tog{
+    opacity: 1;
+}
+#swrong{
+    position: relative;
+    bottom: 30px;
+}
+#done{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 300px;
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    top: -35px;
+    color: white;
+    background-color: #292830;
+    font-size: 20px;
+}
+#done:active{
+    background-color: white;
+    color: #222831;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <link rel="stylesheet" href="style-(STUDENT).css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="main">
+        <h1>GOT IT !!</h1>
+        <div id="sbox">
+            <div id="top">
+                <div id="sin">Sign-in</div>
+                <div id="sup">Sign-up</div>
+            </div>
+            <div id="bot">
+                <div id="message1">
+                    <p style="text-align: left;">passedout students are not eligible and you can only sign-up with the mobileNo,Name which is there on your idcard</p>
+                </div>
+                <div id="message2">
+                    <p style="text-align: left;">Choose a pdf file which should have 2 pages (both front and back image of your own idcard) and the size of file should be less than or equal to 500KB</p>
+                </div>
+                <div id="sign-in">
+                    <input  id="username" type="text"><h3 id="us">Username *</h3>
+                    <input id="password" type="password"><h3 id="ps">Password *</h3>
+                    <span id="tog"><i class="fa-solid fa-eye"></i></span>
+                    <h3 id="swrong"></h3>
+                    <a id="fgot" href="#">Forgot Password ?</a>
+                    <button id="done">Sign-in</button>
+                </div>
+                <div id="sign-up">
+                    <div id="ginfo">
+                        <i id="tellme1" class="fa-solid fa-circle-info"></i>
+                        <input type="text" id="roll"><h3 id="eroll">Enter rollno *</h3>
+                        <input type="text" id="Name"><h3 id="eName">Enter Name *</h3>
+                        <input type="text" id="mno"><h3 id="emno">Enter Number *</h3>
+                        <h1 id="wrong"></h1>
+                        <button id="next">Next</button>
+                    </div>
+                    <div id="pinfo">
+                        <i id="tellme2" class="fa-solid fa-circle-info"></i>
+                        <input type="file" id="pdf" accept="application/pdf" style="display: none;">
+                        <label for="pdf" class="filelabel">Choose File</label>
+                        <input type="password" id="suppassword"><h3 id="esuppassword">Enter Password *</h3><span id="eptog"><i class="fa-solid fa-eye"></i></span>
+                        <input type="password" id="conpassword"><h3 id="econpassword">Confirm Password *</h3><span id="cptog"><i class="fa-solid fa-eye"></i></span>
+                        <h3 id="pwrong"></h3>
+                        <button id="final">Verrify-Mobile-No</button>
+                    </div>
+                    <div id="oinfo">
+                        <input type="text" id="otp"><h3 id="eotp">Enter Otp *</h3><span id="eptog"></span>
+                        <h3 id="owrong">sending...</h3>
+                        <button id="doneup">Verrify and Sign-Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script-(STUDENT).js"></script>
+</body>
+</html>

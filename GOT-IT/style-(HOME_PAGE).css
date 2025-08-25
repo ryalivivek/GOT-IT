@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#cont{
+    background-image: url("HOMEIMG.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+button:active{
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+}
+h1{
+    animation: borani 3s linear 0ms infinite reverse;
+    font-size: 100px; 
+    background: linear-gradient(90deg, orange,green,white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+@keyframes borani {
+    from{
+        box-shadow: 0 0 50px green;
+    }
+    to{ 
+        box-shadow: 0 0 50px red;
+    }
+}
+button{
+    height: 150px;
+    width: 150px;
+    background-color: gold;
+    border: 0px solid transparent;
+    border-radius: 50%;
+    font-size: 30px;
+    position: relative;
+    top: 20%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    animation: borani 3s linear 0ms infinite normal;
+}

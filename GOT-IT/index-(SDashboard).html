@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Dashboard-GOTIT</title>
+    <link rel="stylesheet" href="style-(SDashBoard).css">
+</head>
+<body>
+    <div id="pprompt" style="visibility: hidden;">
+        <div id="pname">Name : </div>
+        <div id="pnot">
+            <p>Notification : </p>
+            <div id="perout">
+                <div id="percircle"></div>
+            </div>
+        </div>
+        <div id="plogout">LogOut</div>
+    </div>
+    <div id="main">
+        <div id="top">
+            <h1 id="mainhead">GOTIT</h1>
+            <div id="btop">
+                <div id="bltop">
+                    <div id="welcome">Hello</div>
+                </div>
+                <div id="brtop">
+                    <div id="ccomplaints">complaints</div>
+                    <div id="ycomplaints">Your's</div>
+                    <div id="profile">Profile</div>
+                    <div id="About">About</div>
+                </div>
+            </div>
+        </div>
+        <div id="bot">
+            <div id="cbot"></div>
+            <div id="ybot"></div>
+        </div>
+    </div>
+    <div id="addcompprompt">
+        <div id="details-addcompprompt">
+            <h2>Add Compliant :-</h2>
+            <div id="close_addcompprompt">close</div>
+        </div>
+        <input type="text" id="lin" placeholder="Enter Lost Item Name *">
+        <input id="feedback"placeholder="Describe Features*">
+        <input type="file" id="cpdf" accept="application/pdf" style="display: none;">
+        <label for="cpdf" class="cfilelabel">Image_pdf (Optional)</label>
+        <h3 id="addcwrong"></h3>
+        <div id="doneaddcomp">Submit</div>
+    </div>
+    <div id="viewcompprompt">
+        <div id="details-viewcompprompt">
+            <h2 style="color: orange;">View Compliant :-</h2>
+            <div id="close_viewcompprompt">close</div>
+        </div>
+        <h3 id="comprollno">roll</h2>
+        <h3 id="compitemname">lost item</h3>
+        <h3 id="compdescr">descr</h3>
+        <div id="iplink">
+            <h3>image : </h3>
+            <a href="#">click here to see image</a>
+        </div>
+    </div>
+    <div id="helpcompprompt">
+        <div id="details-helpcompprompt">
+            <h2 style="color: green;">Enter Details :-</h2>
+            <div id="close_helpcompprompt">close</div>
+        </div>
+        <input type="text" id="place" placeholder="Enter Recovery Place*">
+        <input type="text" id="helpphno" placeholder="Enter Contact No*">
+        <input type="file" id="hpdf" accept="application/pdf" style="display: none;">
+        <label for="hpdf" class="hfilelabel">Image_pdf (Mandatory)</label>
+        <h3 id="helpcwrong"></h3>
+        <div id="donehelpcomp">Submit</div>
+    </div>
+    <div id="helpers_data">
+        <div id="rolls">
+            <div id="rollsdata">
+                <h3 id="rolls-heading">helpers : </h3>
+                <div id="close_helpers_data">close</div>
+            </div>
+            <h3 id="not_their" style="display:none; margin-top:20px;">!! Not Yet Found By Any One !!</h3>
+        </div>
+        <div id="rolls_details">
+            <div id="helpersdetailsdata">
+                <h2 id="rolls_details-heading">helper-data : </h2>
+                <div id="close_rolls_data">back</div>
+            </div>
+            <h2 id="help_from_roll">helper roll : </h2>
+            <h2 id="item_recovery_place">Place : </h2>
+            <h2 id="helper_phno">Phno : </h2>
+            <div id="helper_img_pdf"><h3 id="helper_img_text">Image : <a href="#">not avaliable yet</a></h3></div>
+        </div>
+    </div>
+    <div id="addycomp">+</div>
+    <script src="script-(SDashboard).js"></script>
+</body>
+</html>

@@ -1,0 +1,569 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: #222831;
+}
+#main{
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    height: 600px;
+    width: 700px;
+    background-color:white;
+    transform: translate(-50%,0%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#sbox{
+    height: 500px;
+    width: 400px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 0 0 10px #292830;
+    position: relative;
+}
+#top{
+    height: 10%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+#sin{
+    font-size: 20px;
+    height: 100%;
+    width: 50%;
+    background-color: #222831;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none; 
+    border-top-left-radius: 30px;
+}
+#sup{
+    font-size: 20px;
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none; 
+    border-top-right-radius: 30px;
+}
+#bot{
+    height: 450px;
+    width: 400px;
+    background-color: white;
+    position: relative;
+    border-bottom-left-radius:30px ;
+    border-bottom-right-radius: 30px;
+}
+#sign-in{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 450px;
+    width: 400px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    border-bottom-left-radius:30px ;
+    border-bottom-right-radius: 30px;
+}
+#username{
+    height: 50px;
+    width: 300px;
+    margin: 50px 0 20px 0;
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    padding: 20px;
+    border-radius: 10px;
+}
+#username:focus{
+    border-color: rgba(0,0,0,1);
+}
+#us{
+    position: relative;
+    top: -55px;
+    left: -80px;
+    background-color: white;
+    opacity: 0.5;
+    pointer-events: none;
+    user-select: none;
+    transition: all 0.2s linear 0ms;
+}
+#username:focus ~#us{
+    top: -80px;
+    opacity: 1;
+    padding-left: 10px;
+}
+#password{
+    height: 50px;
+    width: 300px;
+    margin: 0px;
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+}
+#password:focus{
+    border-color: rgba(0,0,0,1);
+}
+#password:focus~#tog{
+    opacity: 1;
+}
+#tog{
+    position: relative;
+    top: -55px;
+    left: 115px;
+    /* user-select: none; */
+    opacity: 0.5;
+    cursor: pointer;
+}
+#ps{
+    position: relative;
+    top: -35px;
+    left: -86px;
+    background-color: white;
+    opacity: 0.5;
+    user-select: none;
+    pointer-events: none;
+    transition: all 0.2s linear 0ms;
+}
+#password:focus~#ps{
+    top: -60px;
+    opacity: 1;
+    padding-left: 10px;
+}
+#sign-up{
+    height: 450px;
+    width: 400px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    background-color: white;
+    border-bottom-left-radius:30px ;
+    border-bottom-right-radius: 30px;
+}
+#fgot{
+    position: relative;
+    top: -32px;
+    left: 82px;
+    color: #222831;
+}
+#done{
+    user-select: none;
+    height: 50px;
+    width: 300px;
+    margin: 50px 0 20px 0;
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    background-color: #222831;
+    position: relative;
+    top: 30px;
+    cursor: pointer;
+}
+#done:active{
+    background-color: white;
+    color: #222831;
+}
+#pinfo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius:30px ;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#oinfo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius:30px ;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#tellme2{
+    font-size: 30px;
+    position: relative;
+    top: -55px;
+    left: 170px;
+    margin: 0;
+    cursor: pointer;
+}
+.filelabel{
+    height: 50px;
+    width: 300px;
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: all 0.2s linear 0ms;
+    font-size: 20px;
+    position: relative;
+    top: -70px;
+    background-color: #222831;
+    color: white;
+}
+#suppassword{
+    height: 50px;
+    width: 300px;
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    top: -30px;
+}
+#suppassword:focus{
+    border: 2px solid rgb(0,0,0);
+}
+#suppassword:focus~#esuppassword{
+    padding-left: 10px;
+}
+#esuppassword{
+    pointer-events: none;
+    background-color: white;
+    opacity: 0.5;
+    pointer-events: none;
+    user-select: none;
+    transition: all 0.2s linear 0ms;
+    position: relative;
+    top: -65px;
+    left: -60px;
+}
+#conpassword{
+    height: 50px;
+    width: 300px;
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    top: -25px;
+}
+#eptog{
+    position: relative;
+    left: 120px;
+    top: -85px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+#cptog{
+    position: relative;
+    left: 120px;
+    top: -80px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+#conpassword:focus{
+    border: 2px solid rgb(0,0,0);
+}
+#conpassword:focus~#econpassword{
+    padding-left: 10px;
+}
+#econpassword{
+    pointer-events: none;
+    background-color: white;
+    opacity: 0.5;
+    pointer-events: none;
+    user-select: none;
+    transition: all 0.2s linear 0ms;
+    position: relative;
+    top: -60px;
+    left: -50px;
+}
+#final{
+    height: 50px;
+    width: 300px;
+    /* margin: -12px 0 0 0; */
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    background-color: #222831;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+}
+#doneup{
+    height: 50px;
+    width: 300px;
+    /* margin: -12px 0 0 0; */
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    background-color: #222831;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+}
+#swrong{
+    position: relative;
+    top: 70px;
+    color:red;
+}
+#pwrong{
+    position: relative;
+    top: 30px;
+    color: red;
+    padding: 0;
+    margin: 0;
+}
+#owrong{
+    position: relative;
+    top: 50px;
+    color: red;
+    padding: 0;
+    margin: 0;
+}
+#ginfo{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius:30px ;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#tellme1{
+    font-size: 30px;
+    position: relative;
+    top: -10px;
+    left: 170px;
+    margin: 0;
+    cursor: pointer;
+}
+#roll{
+    height: 50px;
+    width: 300px;
+    margin: -12px 0 0 0;
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    padding: 20px;
+    border-radius: 10px;
+}
+#roll:focus{
+    border-color: rgba(0,0,0,1);
+}
+#roll:focus ~#eroll{
+    padding-left: 10px;
+}
+#otp{
+    height: 50px;
+    width: 300px;
+    margin: -12px 0 0 0;
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    padding: 20px;
+    border-radius: 10px;
+}
+#otp:focus{
+    border-color: rgba(0,0,0,1);
+}
+#otp:focus ~#eotp{
+    padding-left: 10px;
+}
+#eroll{
+    position: relative;
+    top: -35px;
+    left: -80px;
+    pointer-events: none;
+    background-color: white;
+    opacity: 0.5;
+    pointer-events: none;
+    user-select: none;
+    transition: all 0.2s linear 0ms;
+}
+#eotp{
+    position: relative;
+    top: -88px;
+    left: -90px;
+    pointer-events: none;
+    background-color: white;
+    opacity: 0.5;
+    pointer-events: none;
+    user-select: none;
+    transition: all 0.2s linear 0ms;
+}
+#Name{
+    height: 50px;
+    width: 300px;
+    margin: 20px 0 0 0;
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#Name:focus{
+    border-color: rgba(0,0,0,1);
+}
+#eName{
+    position: relative;
+    top: -35px;
+    left: -80px;
+    pointer-events: none;
+    background-color: white;
+    opacity: 0.5;
+    pointer-events: none;
+    user-select: none;
+    transition: all 0.2s linear 0ms;
+}
+#Name:focus ~#eName{
+    padding-left: 10px;
+}
+#mno{
+    height: 50px;
+    width: 300px;
+    margin: 20px 0 0 0;
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    padding: 20px;
+    border-radius: 10px;
+}
+#emno{
+    position: relative;
+    top: -35px;
+    left: -70px;
+    pointer-events: none;
+    background-color: white;
+    opacity: 0.5;
+    pointer-events: none;
+    user-select: none;
+    transition: all 0.2s linear 0ms;
+}
+
+#mno:focus{
+    border-color: rgba(0,0,0,1);
+}
+#mno:focus ~#emno{
+    padding-left: 10px;
+}
+#wrong{
+    font-size: 15px;
+    color: red;
+    position: relative;
+    top: 30px;
+}
+#next{    
+    height: 50px;
+    width: 300px;
+    margin: 20px 0 60px 0;
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    background-color: #222831;
+    position: relative;
+    top: 30px;
+}
+#next:active{
+    background-color: white;
+    color: #222831;
+}
+#final:active{
+    background-color: white;
+    color: #222831;
+}
+#doneup:active{
+    background-color: white;
+    color: #222831;
+}
+#message1{
+    height: 100px;
+    width: 200px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 40px;
+    padding: 10px;
+    background-color: #222831;
+    position: relative;
+    left: 410px;
+    top: 20px;
+    transform: skew(10deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    visibility: hidden;
+}
+
+#message2{
+    height: 150px;
+    width: 200px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 10px;
+    background-color: #222831;
+    position: relative;
+    left: 420px;
+    top: -80px;
+    transform: skew(10deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    visibility: hidden;
+}

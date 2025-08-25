@@ -1,0 +1,718 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+#pprompt{
+    cursor: pointer;
+    height: 150px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+    position: absolute;
+    right: 50px;
+    top: 100px;
+    z-index: 2;
+    box-shadow: 0px 0px 10px black;
+    user-select: none;
+}
+#pname{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    padding-left: 10px;
+}
+#pnot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top: 1px solid #222831;
+    border-bottom: 1px solid #222831;
+}
+#perout{
+    height: 30px;
+    width: 60px;
+    background-color: blue;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 20px;
+    padding: 5px;
+}
+#percircle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+#plogout{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: #222831;
+    color: white;
+}
+#main{
+    height: 100vh;
+    width: 100%;
+}
+.addtomain{
+    opacity: 0.2;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+#top{
+    height: 90px;
+    width: 100%;
+    background-color: #222831;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+#mainhead{
+    margin-top: 4px;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+}
+#btop{
+    align-self: flex-end;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#bltop{
+    display: flex;
+    justify-content: flex-start;
+    align-items : flex-end;
+    height: 100%;
+    width: 700px;
+}
+#brtop{
+    display: flex;
+    height: 100%;
+    width: 400px;
+}
+#About{
+    user-select: none;
+    width: 100px;
+    background-color: white;
+    color: #222831;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+#ccomplaints{
+    user-select: none;
+    width:100px;
+    background-color:  #00ADB5;
+    color: #222831;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-top-left-radius: 20px;
+    cursor:pointer;
+}
+#ycomplaints{
+    user-select: none;
+    width: 100px;
+    background-color: white;
+    color: #222831;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+#profile{
+    user-select: none;
+    width: 100px;
+    background-color: white;
+    color: #222831;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+#addycomp{
+    height: 70px;
+    width: 70px;
+    background-color: #222831;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    color: white;
+    border-radius: 50%;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    visibility: hidden;
+    cursor: pointer;
+}
+#addycomp:hover{
+    background-color: white;
+    color: #222831;
+    border: 2px solid #222831;
+}
+#bot{
+    position: relative;
+    top: 90px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+#cbot{
+    width: 100%;
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#seecomplaint{
+    height: 100%;
+    width:100%;
+    background-color: rgba(22,23,23,0.3);
+}
+#ybot{
+    width: 100%;
+    visibility:hidden;
+    position: absolute;
+    z-index: 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nele a{
+    color: white;
+    text-decoration: none;
+}
+.nottheiranything{
+    color: #222831
+}
+.nele{
+    height: 50px;
+    width: 95%;
+    color: white;
+    background-color: #222831;
+    margin-top: 20px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.right{
+    height: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: opacity 0.5s linear;
+}
+.righty{
+    height: 40px;
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: opacity 0.5s linear;
+}
+.view{
+    height: 30px;
+    width: 90px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.5s linear 0s, background-color 0.5s linear 0s;
+    cursor: pointer;
+}
+.viewy{
+    height: 30px;
+    width: 90px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.5s linear 0s, background-color 0.5s linear 0s;
+    cursor: pointer;
+}
+.viewy:hover{
+    background-color: white;
+    color: #222831;
+}
+.view:hover{
+    background-color: white;
+    color: #222831;
+}
+.helpy:hover{
+    background-color: white;
+    color: #222831;
+}
+.help{
+    height: 30px;
+    width: 90px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.5s linear 0s, background-color 0.5s linear 0s;
+    cursor: pointer;
+}
+.help:hover{
+    background-color: white;
+    color: #222831;
+}
+.del:hover{
+    background-color: white;
+    color: #222831;
+}
+.helpy{
+        background-color: green;
+        height: 30px;
+        width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: color 0.5s linear 0s, background-color 0.5s linear 0s;
+        cursor: pointer;
+}
+.del{
+    height: 30px;
+    width: 90px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.5s linear 0s, background-color 0.5s linear 0s;
+    cursor: pointer;
+}
+#addcwrong{
+    color:red;
+}
+#helpcwrong{
+    color:red;
+}
+#addcompprompt{
+    height: 400px;
+    width: 350px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0 0 50px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+}
+#viewcompprompt{
+    /* border: 2px double black; */
+    height: 300px;
+    width: 350px;
+    background-color: white;
+    color: #222831;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-radius: 30px;
+    box-shadow: 0 0 50px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-left: 10px;
+    padding-right: 10px;
+    visibility: hidden;
+}
+#helpcompprompt{
+    height: 350px;
+    width: 350px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0 0 50px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+}
+#helpers_data{
+    height: 350px;
+    width: 350px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0 0 5px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+}
+#close_helpers_data{
+    height: 30px;
+    width: 60px;
+    font-size: 23px;
+    border-radius: 20px;
+    background-color: white;
+    color: red;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#close_rolls_data{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 30px;
+    width: 60px;
+    font-size: 23px;
+    border-radius: 20px;
+    background-color: white;
+    color: red;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#close_helpers_data:hover{
+    background-color: red;
+    color: white;
+}
+#close_rolls_data:hover{
+    background-color: red;
+    color: white;
+}
+#rolls-heading{
+    /* position: absolute;
+    top: 20px;
+    left: 10px; */
+    pointer-events: none;
+}
+#rolls_details-heading{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+.eright{
+    background-color: green;
+    color: white;
+    height: 20px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.5s linear 0s, background-color 0.5s linear 0s,opacity 0.5s linear 0s;
+    visibility: hidden;
+    opacity: 0;
+}
+.eright:hover{
+    background-color: white;
+    color: #222831;
+}
+#rolls{
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    background-color: white;
+    color: #222831;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0 0 50px black;
+    z-index: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 500px;
+    padding: 20px; 
+}
+#helpersdetailsdata{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#rolls_details{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-radius: 30px;
+    box-shadow: 0 0 50px black;
+    z-index: 0;
+    padding-left: 10px;
+}
+#details-viewcompprompt{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#details-helpcompprompt{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#rollsdata{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#iplink{
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nhelp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 300px;
+    background-color: #222831;
+    margin-top: 5px;
+    flex-shrink: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.cfilelabel{
+    z-index: 1;
+    height: 50px;
+    width: 300px;
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: all 0.2s linear 0ms;
+    font-size: 20px;
+    position: relative;
+    background-color: black;
+    color: white;
+}
+.hfilelabel{
+    z-index: 1;
+    height: 50px;
+    width: 300px;
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: all 0.2s linear 0ms;
+    font-size: 20px;
+    position: relative;
+    background-color: black;
+    color: white;
+}
+#lin{
+    height: 50px;
+    width: 300px;
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+#feedback{
+    height: 50px;
+    width: 300px;
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+#place{
+    height: 50px;
+    width: 300px;
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+#helpphno{
+    height: 50px;
+    width: 300px;
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+#details-addcompprompt{
+    height: 50px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#details-addcompprompt h2{
+    position:relative;
+    left: -20px;
+    color: #222831;
+    font-size: 20px;
+}
+#close_addcompprompt{
+    position: relative;
+    top: -20px;
+    left: 40px;
+    height: 30px;
+    width: 60px;
+    font-size: 23px;
+    border-radius: 20px;
+    background-color: white;
+    color: red;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#close_helpcompprompt{
+    position: relative;
+    top: --25px;
+    left: 20px;
+    height: 30px;
+    width: 60px;
+    font-size: 23px;
+    border-radius: 20px;
+    background-color: white;
+    color: red;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#close_helpcompprompt:hover{
+    background-color: red;
+    color: white;
+}
+#close_addcompprompt:hover{
+    background-color: red;
+    color: white;
+}
+#close_viewcompprompt{
+    position: relative;
+    top: -20px;
+    left: 30px;
+    height: 30px;
+    width: 60px;
+    font-size: 23px;
+    border-radius: 20px;
+    background-color: white;
+    color: red;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#close_viewcompprompt:hover{
+    background-color: red;
+    color: white;
+}
+#doneaddcomp{
+    height: 50px;
+    width: 300px;
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    background-color: #222831;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#donehelpcomp{
+    height: 50px;
+    width: 300px;
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.4);
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    background-color: #222831;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
